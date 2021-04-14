@@ -5,3 +5,4 @@ run
 static
 rpc-*
 package-lock.json
+config/

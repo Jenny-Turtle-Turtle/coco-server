@@ -2,7 +2,14 @@ const Controller = require('egg').Controller;
 
 
 class ProjectController extends Controller {
-
+  /**
+   *
+   * @returns {Promise<void>}
+   * @step1 创建 org project
+   * @step2 找到模板项目下载至本地
+   * @step3 对模板注入数据
+   * @step4 发布至 project gh-page 分支
+   */
   async createProject() {
     const {params, model, service} = this.ctx;
     const {pageConfig} = params;
